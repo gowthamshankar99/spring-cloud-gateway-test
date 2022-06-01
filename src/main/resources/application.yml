@@ -7,12 +7,11 @@ spring:
     gateway:
        routes:
        - id: loginMicroservice
-         #uri: http://localhost:9002/
          uri: http://login-service.default.gowthamshankar.net/
          predicates: 
          - Path=/ecommerce/login/**
 
        - id: orderMicroservice
-         uri: http://localhost:9001/
+         uri: http://order-service.default.gowthamshankar.net/
          predicates: 
          - Path=/ecommerce/order/**
