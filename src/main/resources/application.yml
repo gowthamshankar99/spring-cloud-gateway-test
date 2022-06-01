@@ -7,7 +7,8 @@ spring:
     gateway:
        routes:
        - id: loginMicroservice
-         uri: http://localhost:9002/
+         #uri: http://localhost:9002/
+         uri: http://login-service.default.gowthamshankar.net/
          predicates: 
          - Path=/ecommerce/login/**
 
